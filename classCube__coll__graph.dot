@@ -1,0 +1,18 @@
+digraph "Cube"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Cube\n|- _vertices\l- _indices\l- model\l- view\l- proj\l- scaleUniID\l- rotation\l- zmove\l- xpos\l- ypos\l|+ Cube()\l+ ~Cube()\l+ setScaleUniform()\l+ setTexUinform()\l+ setMatUniform()\l+ scale()\l+ rotate()\l+ move()\l+ activateShader()\l+ draw()\l- random()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -shader" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Shader\n|+ ID\l|+ Shader()\l+ activate()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShader.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -texture" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Texture\n|+ ID\l+ type\l|+ Texture()\l+ texUint()\l+ bind()\l+ unbind()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTexture.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -ebo" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{EBO\n|+ ID\l|+ EBO()\l+ EBO()\l+ setup()\l+ bind()\l+ unbind()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEBO.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -vbo" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{VBO\n|+ ID\l|+ VBO()\l+ VBO()\l+ setup()\l+ bind()\l+ unbind()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVBO.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -vao" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{VAO\n|+ ID\l|+ VAO()\l+ linkAttrib()\l+ bind()\l+ unbind()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVAO.html",tooltip=" "];
+}

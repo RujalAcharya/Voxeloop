@@ -1,0 +1,8 @@
+digraph "Stack&lt; T, Container &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Stack\< T, Container \>\n|- _top\l- stack\l|+ Stack()\l+ isEmpty()\l+ isFull()\l+ push()\l+ pop()\l+ peek()\l+ top()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A data structure that works in LIFO principle."];
+}

@@ -1,0 +1,8 @@
+digraph "CoreEngine"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CoreEngine\n|- states\l- m_isRunning\l- m_fullscreen\l- m_sharedData\l- m_window\l|+ init()\l+ cleanup()\l+ changeState()\l+ pushState()\l+ popState()\l+ handleEvents()\l+ update()\l+ draw()\l+ isRunning()\l+ quit()\l+ key_callback()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The underlying engine that handles everything underneath."];
+}
